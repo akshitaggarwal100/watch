@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Timer</title>
+</head>
+
+<body>
+
+    <div class="clock">
+        <span class="unit hr">0</span>
+        :
+        <span class="unit min">0</span>
+        :
+        <span class="unit sec">0</span>
+    </div>
+
+    <div class="sections">
+        <button class="clockBtn">Clock</button>
+        <button class="timerBtn">Timer</button>
+    </div>
+
+    <form class="hide">
+        <div class="timerInputs">
+            <input name="hrInput" type="number" min="0">
+            <input name="minInput" type="number" min="0" max="59">
+            <input name="secInput" type="number" min="0" max="59">
+        </div>
+
+        <div class="timerControls">
+            <button name="start">Set Timer</button>
+            <button name="stop" type="button">Stop</button>
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
